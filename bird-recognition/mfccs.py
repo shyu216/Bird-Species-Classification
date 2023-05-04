@@ -239,7 +239,7 @@ class MFCCs():
         #  from Hz to fft bin number
         bin = numpy.floor((nfft+1)*self.mel2hz(melpoints)/samplerate)
         # bin to integer
-        bin = numpy.array(bin, dtype=numpy.int)
+        bin = numpy.array(bin, dtype=int)
 
         fbank = numpy.zeros([int(nfilt),int(nfft/2+1)])
         for j in range(0,nfilt):
