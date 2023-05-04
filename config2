@@ -1,0 +1,16 @@
+#Host marco-re3
+  HostName github.com
+  AddKeysToAgent yes
+  User git
+#  IdentityFile ~/.ssh/id_marcore3github
+
+#Host kelvin
+  HostName github.com
+  AddKeysToAgent yes
+  User git
+#  IdentityFile ~/.ssh/id_kelvin
+
+#Host github.com
+  AddKeysToAgent yes
+  User git
+#  IdentityFile ~/.ssh/id_kelvin

@@ -1,0 +1,10 @@
+{
+    "WAV_DIR": "../data/NIPS4B_BIRD_CHALLENGE_TRAIN_TEST_WAV",
+    "LABEL_DIR": "../data/NIPS4B_BIRD_CHALLENGE_TRAIN_LABELS",
+    "MFCC_DIR": "../data/NIPS4B_BIRD_CHALLENGE_TRAIN_TEST_MFCC",
+    "SUBMISSION_DIR": "../submissions",
+    "OUTPUT_DIR": "dumps",
+    "TRAIN_SET": "../train.txt",
+    "TEST_SET": "../test.txt",
+    "VAL_SET": "../val.txt"
+}
