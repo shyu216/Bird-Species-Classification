@@ -95,7 +95,7 @@ if __name__ == '__main__':
     fold = fold_builder.submission_fold()
     list_of_wavs = fold_builder.get_wavs()
 
-    run_name = "pca_100_16_149"
+    run_name = "attempt_1"
     dump = True
     pred_dfs = []
 
@@ -107,6 +107,12 @@ if __name__ == '__main__':
         if dump:
             training_utils.dump_model(model)
 
-    blended_df = submission_utils.normalized_even_blend(pred_dfs)
+        # model = training_utils.load_model(run_name, i)
+        # # print(model.oob_score)
+        # # print(model.pred_df)
+
+        # pred_dfs.append(model.pred_df)
+
+    blended_df = submission_utils.normalized_even_blend(pred_dfs, fold).loc[fold.testing_mask]
     submission_utils.write_submission_csv(blended_df, 'submission.csv') 
 

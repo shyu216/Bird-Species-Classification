@@ -186,8 +186,8 @@ class CollapseWindowPredictions:
 
 def make_prediction_df(list_of_preds, fold):
     """Make a prediction df in the same format as data.label_df from a fold whose list_of_features are the predictions"""
-
-    return pd.DataFrame(np.array(list_of_preds), index=fold.clipnames, columns=fold.call_ids).iloc[fold.testing_mask]
+    # .iloc[fold.testing_mask]
+    return pd.DataFrame(np.array(list_of_preds), index=fold.clipnames, columns=fold.call_ids)
 
 
 def score(fold):

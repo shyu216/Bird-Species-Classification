@@ -31,9 +31,9 @@ if __name__ == '__main__':
 
     v2 = met.roc_auc_score(np.greater(df2.values.ravel(), np.ones_like(df1.values.ravel())*avg2), df1.values.ravel())
 
-    print v1, v2
+    print(v1, v2)
 
     if (v1+v2)/2 > 0.96:
-        print "Submission passes sanity check"
+        print ("Submission passes sanity check")
     else:
-        print "Submission fails sanity check"
+        print ("Submission fails sanity check")

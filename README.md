@@ -21,3 +21,7 @@ In this competetion, only the labels of training set are provided, but the test 
 ## Tensorflow
 
 https://www.tensorflow.org/api_docs/python/tf/keras/layers/LSTM
+
+## Evaluation
+
+Receiver Operating Characteristic Curve
