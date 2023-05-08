@@ -2,3 +2,5 @@ data
 bird-recognition/dumps
 cpt/BEATs_iter3_plus_AS2M.pt
 cpt/Tokenizer_iter3_plus_AS2M.pt
+PCA/dumps/models
+*.wav
