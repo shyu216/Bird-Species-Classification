@@ -25,3 +25,19 @@ https://www.tensorflow.org/api_docs/python/tf/keras/layers/LSTM
 ## Evaluation
 
 Receiver Operating Characteristic Curve
+
+
+## AST for Kaggle
+
+python3 gen_weight_file.py --data_path ./data/datafiles/train.json
+python3 gen_weight_file.py --data_path ./data/datafiles/test.json 
+python3 gen_weight_file.py --data_path ./data/datafiles/eval.json 
+
+scp run.sh shyu0@linux9:/research/dept8/fyp22/lj2202/eleg5491/ast/egs/kaggle
+scp "shyu0@linux9:/research/dept8/fyp22/lj2202/eleg5491/ast/egs/kaggle/log*" ./
+
+srun --gres=gpu:1 -w gpu38 -p gpu_8h --pty /bin/bash 
+conda activate eleg5491
+
+cd eleg5491/ast/egs/kaggle/
+sbatch ./run.sh 
