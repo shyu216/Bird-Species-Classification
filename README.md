@@ -8,15 +8,13 @@ Our goal is to deploy some deep learning models to do the classification.
 
 - []ResNet
 - []LSTM
-- []Transformer
+- [x]Transformer
 
 ## Dataset
 
 In this competetion, only the labels of training set are provided, but the test set's labels are unknown. Then we divide the original training set into smaller training set and validation set and testing set for our experiments.
 
 ## Data Preprocessing
-
-### Audio Data vs Image
 
 ## Tensorflow
 
